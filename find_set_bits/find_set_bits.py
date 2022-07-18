@@ -6,8 +6,6 @@ def find_set_bits(numbers):
     for num in numbers:
         total += 1 << num
 
-    print(total)
-
     while total != 0:
         if total & 1 == 1:
             set_bits.append(shift_count)
