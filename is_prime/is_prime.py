@@ -2,7 +2,7 @@ def is_prime(number):
     i = 2
     number_is_prime = True
 
-    while i*i < number:
+    while i*i <= number:
         if number % i == 0:
             number_is_prime = False
             break
