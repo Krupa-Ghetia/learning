@@ -3,23 +3,35 @@ def print_matrix_spirally(mat, rows, cols):
     right = cols - 1
     top = 0
     bottom = rows - 1
+    visited_elems = 0
 
-    for i in range(0, rows * cols):
-
-        for j in range(left, right + 1):
+    while visited_elems < rows * cols:
+        j = left
+        while j <= right:
             print(mat[top][j], end=" ")
+            j += 1
+            visited_elems += 1
         top = top + 1
 
-        for j in range(top, bottom + 1):
+        j = top
+        while j <= bottom:
             print(mat[j][right], end=" ")
+            j += 1
+            visited_elems += 1
         right = right - 1
 
-        for j in range(right, left - 1, -1):
+        j = right
+        while j >= left:
             print(mat[bottom][j], end=" ")
+            j -= 1
+            visited_elems += 1
         bottom = bottom - 1
 
-        for j in range(bottom, top - 1, -1):
+        j = bottom
+        while j >= top:
             print(mat[j][left], end=" ")
+            j -= 1
+            visited_elems += 1
         left = left + 1
     print("")
 
