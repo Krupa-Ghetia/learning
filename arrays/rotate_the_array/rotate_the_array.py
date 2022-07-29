@@ -1,10 +1,9 @@
 def rotate_array(arr, k):
-
     arr_len = len(arr)
     pos_arr = []
 
     for i in range(0, arr_len):
-        shift_pos = (i+k)%arr_len
+        shift_pos = (i + k) % arr_len
         pos_arr.append((shift_pos, arr[i]))
 
     for x in pos_arr:
