@@ -1,7 +1,7 @@
 import math
 
 
-def rotate_matrix(mat):
+def rotate_matrix_clockwise(mat):
     mat = transpose_matrtix(mat)
     mat = reverse_rows(mat)
 
@@ -28,6 +28,6 @@ def reverse_rows(mat):
 
 
 if __name__ == "__main__":
-    rotate_matrix([[1,2,3],[4,5,6],[7,8,9]])
-    rotate_matrix([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]])
+    rotate_matrix_clockwise([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    rotate_matrix_clockwise([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]])
 
