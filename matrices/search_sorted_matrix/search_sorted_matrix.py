@@ -8,8 +8,6 @@ def search_sorted_matrix(A, B):
         for j in range(0, len(A[i])):
             if A[i][j] == B and result == -1:
                 result = (i + 1) * 1009 + (j + 1)
-            elif A[i][j] == B and (i * 1009 + j) < result:
-                result = (i + 1) * 1009 + (j + 1)
 
     print(result)
 
