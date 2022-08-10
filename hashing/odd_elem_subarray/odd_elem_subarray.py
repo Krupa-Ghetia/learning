@@ -24,3 +24,4 @@ def odd_elem_subarray(arr, k):
 if __name__ == "__main__":
     odd_elem_subarray([2, 4, 1, 3, 8], 1)
     odd_elem_subarray([2, 4, 1, 8, 3], 1)
+    odd_elem_subarray([2, 4, 1, 3, 8], 2)
