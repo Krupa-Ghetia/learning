@@ -1,4 +1,4 @@
-Given a string, check if it a palindrome.
+Given a string, check if its a palindrome.
 
 Example 1:
 ```buildoutcfg
